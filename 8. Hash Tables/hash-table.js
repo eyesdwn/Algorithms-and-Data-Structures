@@ -39,7 +39,7 @@ class HashTable {
     return valuesArr;
   }
 
-  private hash(key) {
+  hash(key) {
     let total = 0;
     let WEIRD_PRIME = 31;
     for (let i = 0; i < Math.min(key.length, 100); i++) {
