@@ -30,7 +30,7 @@ class PriorityQueue {
     return min;
   }
 
-  private bubbleUp() {
+  bubbleUp() {
     let index = this.values.length - 1;
     const element = this.values[index];
     while (index > 0) {
@@ -43,7 +43,7 @@ class PriorityQueue {
     }
   }
 
-  private sinkDown() {
+  sinkDown() {
     let index = 0;
     const length = this.values.length;
     const element = this.values[0];
