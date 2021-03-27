@@ -18,7 +18,7 @@ class MaxBinaryHeap {
     return max;
   }
 
-  private bubbleUp() {
+  bubbleUp() {
     let index = this.values.length - 1;
     const element = this.values[index];
     while (index > 0) {
@@ -31,7 +31,7 @@ class MaxBinaryHeap {
     }
   }
 
-  private sinkDown() {
+  sinkDown() {
     let index = 0;
     const length = this.values.length;
     const element = this.values[0];
